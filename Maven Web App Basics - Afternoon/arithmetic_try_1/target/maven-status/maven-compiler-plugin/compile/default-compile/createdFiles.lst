@@ -1,0 +1,3 @@
+arithmeticpackage\App.class
+arithmeticpackage\interfaces\ArithmeticInterface.class
+arithmeticpackage\impl\ArithmeticImpl.class
