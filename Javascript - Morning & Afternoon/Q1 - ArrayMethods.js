@@ -6,7 +6,7 @@ var brr = [1, 2, 3];
 var concatedArr = arr.concat(brr);
 console.log(concatedArr); // [7, 6, 5, 4, 3, 1, 2, 3]
 
-// *******************************************************
+// ******************************************************
 
 function isPositive(num){
     return num > 0;
