@@ -15,6 +15,6 @@ const reg2 = RegExp(/[h][aeiou]?.t/);
 console.log(reg2.test(str));
 
 // "homt" returns true
-// "hot" returns true
+// "halt" returns true
 // "help " returns false
 
