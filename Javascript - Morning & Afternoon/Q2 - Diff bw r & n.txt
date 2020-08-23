@@ -1,0 +1,6 @@
+In simple words,
+\n means newline. Whenever \n is encountered, it means advance to the next line downwards.
+It is also called linefeed.
+
+\r means carriage return. Whenever \r is encountered, it means return to the beginning of the current line.
+The term 'carriage' comes from a printer's carriage. 
