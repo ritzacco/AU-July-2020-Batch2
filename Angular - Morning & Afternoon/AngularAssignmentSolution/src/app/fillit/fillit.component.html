@@ -1,0 +1,60 @@
+<div *ngIf="!FName; else forminfo">
+	<form [formGroup]="RFG" (ngSubmit)="update(RFG.value)">
+		<div class="form-container">
+			<div class="minidiv">
+				<ul style="list-style-type:none;">
+					<li>
+						<label>
+               <input type="text" formControlName="FName" placeholder="First Name">
+               </label>
+					</li>
+
+					<li>
+						<label>
+               <input type="text" formControlName="MName" placeholder="Middle Name">
+               </label>
+					</li>
+
+					<li>
+						<label>
+               <input type="text" formControlName="LName" placeholder="Last Name">
+               </label>
+					</li>
+
+					<li>
+						<label>
+               <input type="number" formControlName="ReferenceNum" placeholder="Reference Number">
+               </label>
+					</li>
+
+					<li>
+						<label>
+               <input type="number" formControlName="PhoneNum" placeholder="Phone Number">
+               </label>
+					</li>
+
+					<li>
+						<label>
+               <textarea formControlName="Content" placeholder="Content"></textarea>
+               </label>
+					</li>
+				</ul>
+				<input type="submit" class="btn-lg" value="Submit Form" [disabled]="!RFG.valid">
+      </div>
+			</div>
+	</form>
+</div>
+<ng-template #forminfo>
+	<div class="form-container">
+		<div class="row columns">
+			<h1>Here's the info.</h1>
+			<h2>First Name: {{ FName }}</h2>
+			<h2>Middle Name:{{ MName }}</h2>
+			<h2>Last Name: {{ LName }}</h2>
+			<h2>Ref No.:{{ ReferenceNum }}</h2>
+			<h2>Phone No.:{{ PhoneNum }}</h2>
+			<h3>Content: {{ Content }}</h3>
+		</div>
+	</div>
+</ng-template>
+<app-showit [childPosts]="Infolist"></app-showit>
