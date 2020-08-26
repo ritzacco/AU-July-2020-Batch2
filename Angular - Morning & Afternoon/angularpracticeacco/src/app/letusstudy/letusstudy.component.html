@@ -1,0 +1,42 @@
+<div class="form-container">
+    <h2> FlatMap </h2>
+    <p>
+        Conversion of an observable of observables into a single observable i.e. 'flattening' is called FlatMap.. For RxJs, the mapping function looks like this: item => Observable. rather than this: item => Array.
+    </p> 
+
+    <h2>SwitchMap</h2>
+    <p>
+        A switchMap operator will return an immediately reflected observable which subequently emits items on the basis of a function specified to each item that is emitted by the "source" observable where that function returns the inner observable.
+
+    </p>
+
+    <h2>ExhaustMap</h2>
+    <p>
+        ExhaustMap returns an observable that emits items based on a function that is specified to each item emitted by the source Observable, where that function returns an (so-called "inner") Observable. On projecting a source value to an Observable, the output Observable 
+        begins emitting the items emitted by that projected Observable.
+    </p>
+
+    <h2>ConcatMap</h2>
+    <p>
+        The Angular ConcatMap maps each value from the source observable into an inner observable, subscribes to it, and then starts emitting the values from it replacing the original value. It creates a new inner observable for every value it receives from the Source.
+    </p>
+
+    <h2>ViewEncapsulation</h2>
+    <p>
+        Defines template and style encapsulation options available for Component's Component.
+    </p>
+    <h3>Members</h3>
+    <ul>
+        <li>
+            Emulated : Emulate Native scoping of styles by adding an attribute containing surrogate id to the Host Element and pre-processing the style rules provided via styles or styleUrls, and adding the new Host Element attribute to all selectors.
+
+This is the default option.
+        </li>
+        <li>
+            None:  Don't provide any template or style encapsulation.
+        </li>
+        <li>
+            ShadowDom: Use Shadow DOM to encapsulate styles.
+        </li>
+    </ul>
+</div>

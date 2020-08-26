@@ -1,0 +1,14 @@
+.form-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.btn-lg {
+  margin-left: 10%;
+  float: right;
+}
+
+li {
+  margin: 2%;
+  float: left;
+}
